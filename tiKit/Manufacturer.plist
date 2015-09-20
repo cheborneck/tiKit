@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Acura</key>
+        <array>
+            <string>ILX</string>
+            <string>MDX</string>
+            <string>RDX</string>
+            <string>RLX</string>
+            <string>RLX Sport Hybrid</string>
+            <string>TL</string>
+            <string>TLX</string>
+            <string>TSX</string>
+        </array>
+        <key>Alpha Romeo</key>
+        <array>
+            <string>4C</string>
+            <string>4C Spider</string>
+        </array>
+        <key>Aston Martin</key>
+        <array>
+            <string>DB9</string>
+            <string>Rapide S</string>
+            <string>Vanquish</string>
+            <string>Vantage</string>
+        </array>
+        <key>Audi</key>
+        <array>
+            <string>A3</string>
+            <string>A4</string>
+            <string>A5</string>
+            <string>A6</string>
+            <string>A7</string>
+            <string>A8</string>
+            <string>allroad</string>
+            <string>Q3</string>
+            <string>Q5</string>
+            <string>Q7</string>
+            <string>R8</string>
+            <string>RS5</string>
+            <string>RS7</string>
+            <string>S3</string>
+            <string>S4</string>
+            <string>S5</string>
+            <string>S6</string>
+            <string>S7</string>
+            <string>S8</string>
+            <string>SQ5</string>
+            <string>TT</string>
+        </array>
+        <key>Bentley</key>
+        <array>
+            <string>Continental</string>
+            <string>Flying Spur</string>
+            <string>Mulsanne</string>
+        </array>
+        <key>BMW</key>
+        <array>
+            <string>2 Series</string>
+            <string>3 Series</string>
+            <string>4 Series</string>
+            <string>5 Series</string>
+            <string>6 Series</string>
+            <string>7 Series</string>
+            <string>i3</string>
+            <string>i8</string>
+            <string>M3</string>
+            <string>M4</string>
+            <string>M5</string>
+            <string>M6</string>
+            <string>X1</string>
+            <string>X3</string>
+            <string>X4</string>
+            <string>X5</string>
+            <string>X5 M</string>
+            <string>X6</string>
+            <string>X6 M</string>
+            <string>Z4</string>
+        </array>
+        <key>Buick</key>
+        <array>
+            <string>Enclave</string>
+            <string>Encore</string>
+            <string>LaCrosse</string>
+            <string>Regal</string>
+            <string>Verano</string>
+        </array>
+        <key>Cadillac</key>
+        <array>
+            <string>ATS</string>
+            <string>ATS-V</string>
+            <string>CTS</string>
+            <string>CTS-V</string>
+            <string>ELR</string>
+            <string>Escalade</string>
+            <string>Escalade ESV</string>
+            <string>SRX</string>
+            <string>STX</string>
+        </array>
+        <key>Chevrolet</key>
+        <array>
+            <string>Camero</string>
+            <string>City Express</string>
+            <string>Colorado Crew Cab</string>
+            <string>Colorado Extended Cab</string>
+            <string>Corvette</string>
+            <string>Cruz</string>
+            <string>Equinox</string>
+            <string>Express 1500 Cargo</string>
+            <string>Express 1500 Passenger</string>
+            <string>Express 2500 Cargo</string>
+            <string>Express 2500 Passenger</string>
+            <string>Express 3500 Cargo</string>
+            <string>Express 3500 Passenger</string>
+            <string>Impala</string>
+            <string>Malibu</string>
+            <string>Silverado 1500 Crew Cab</string>
+            <string>Silverado 1500 Double Cab</string>
+            <string>Silverado 1500 Regular Cab</string>
+            <string>Express 2500 HD Crew Cab</string>
+            <string>Express 2500 HD Double Cab</string>
+            <string>Express 2500 HD Regular Cab</string>
+            <string>Express 3500 HD Crew Cab</string>
+            <string>Express 3500 HD Double Cab</string>
+            <string>Express 3500 HD Regular Cab</string>
+            <string>Sonic</string>
+            <string>Spark</string>
+            <string>Spark EV</string>
+            <string>SS</string>
+            <string>Suburban</string>
+            <string>Suburban 1500</string>
+            <string>Tahoe</string>
+            <string>Traverse</string>
+            <string>Trax</string>
+            <string>Volt</string>
+        </array>
+        <key>Chrysler</key>
+        <array>
+            <string>200</string>
+            <string>300</string>
+            <string>Town &amp; Country</string>
+        </array>
+        <key>Dodge</key>
+        <array>
+            <string>Avenger</string>
+            <string>Challenger</string>
+            <string>Charger</string>
+            <string>Dart</string>
+            <string>Durango</string>
+            <string>Grand Caravan Passenger</string>
+            <string>Journey</string>
+            <string>Viper</string>
+        </array>
+        <key>Ferrari</key>
+        <array>
+            <string>458 Italia</string>
+            <string>458 Speciale</string>
+            <string>458 Spider</string>
+            <string>California</string>
+            <string>F12 Berlinetta</string>
+            <string>FF</string>
+        </array>
+        <key>FIAT</key>
+        <array>
+            <string>500</string>
+            <string>500 Abarth</string>
+            <string>500c</string>
+            <string>500e</string>
+            <string>500L</string>
+            <string>500X</string>
+        </array>
+        <key>Ford</key>
+        <array>
+            <string>C-MAX Energi</string>
+            <string>C-MAX Hybrid</string>
+            <string>E150 Cargo</string>
+            <string>E150 Passenger</string>
+            <string>E250 Cargo</string>
+            <string>E350 Super Duty Cargo</string>
+            <string>Edge</string>
+            <string>Escape</string>
+            <string>Expedition</string>
+            <string>Expedition EL</string>
+            <string>Explorer</string>
+            <string>F150 Regular Cab</string>
+            <string>F150 Super Cab</string>
+            <string>F150 Super Crew Cab</string>
+            <string>F250 Super Duty Crew Cab</string>
+            <string>F250 Super Duty Regular Cab</string>
+            <string>F250 Super Duty Super Cab</string>
+            <string>F350 Super Duty Crew Cab</string>
+            <string>F350 Super Duty Regular Cab</string>
+            <string>F350 Super Duty Super Cab</string>
+            <string>Fiesta</string>
+            <string>Flex</string>
+            <string>Focus</string>
+            <string>Focus ST</string>
+            <string>Fusion</string>
+            <string>Fusion Energi</string>
+            <string>Mustang</string>
+            <string>Taurus</string>
+            <string>Transit 150 Van</string>
+            <string>Transit 150 Wagon</string>
+            <string>Transit 250 Van</string>
+            <string>Transit 350 HD Van</string>
+            <string>Transit 350 Van</string>
+            <string>Transit 350 Wagon</string>
+            <string>Transit Connect Cargo</string>
+            <string>Transit Connect Passenger</string>
+        </array>
+        <key>Freightliner</key>
+        <array>
+            <string>Sprinter 2500 Cargo</string>
+            <string>Sprinter 2500 Crew</string>
+            <string>Sprinter 2500 Passenger</string>
+            <string>Sprinter 3500 Cargo</string>
+        </array>
+        <key>GMC</key>
+        <array>
+            <string>Acadia</string>
+            <string>Canyon Crew Cab</string>
+            <string>Canyon Extended Cab</string>
+            <string>Savana 1500 Cargo</string>
+            <string>Savana 1500 Passenger</string>
+            <string>Savana 2500 Cargo</string>
+            <string>Savana 2500 Passenger</string>
+            <string>Savana 3500 Cargo</string>
+            <string>Savana 3500 Passenger</string>
+            <string>Sierra 1500 Crew Cab</string>
+            <string>Sierra 1500 Double Cab</string>
+            <string>Sierra 1500 Regular Cab</string>
+            <string>Sierra 2500 HD Crew Cab</string>
+            <string>Sierra 2500 HD Double Cab</string>
+            <string>Sierra 2500 HD Regular Cab</string>
+            <string>Sierra 3500 HD Crew Cab</string>
+            <string>Sierra 3500 HD Double Cab</string>
+            <string>Sierra 3500 HD Regular Cab</string>
+            <string>Terrain</string>
+            <string>Yukon</string>
+            <string>Yukon XL</string>
+            <string>Yukon XL 1500</string>
+        </array>
+        <key>Honda</key>
+        <array>
+            <string>Accord</string>
+            <string>Accord Hybrid</string>
+            <string>Civic</string>
+            <string>Crosstour</string>
+            <string>CR-V</string>
+            <string>CR-Z</string>
+            <string>Fit</string>
+            <string>HR-V</string>
+            <string>Insight</string>
+            <string>Odyssey</string>
+            <string>Pilot</string>
+            <string>Ridgeline</string>
+        </array>
+        <key>Hyundai</key>
+        <array>
+            <string>Accent</string>
+            <string>Azera</string>
+            <string>Elantra</string>
+            <string>Elantra GT</string>
+            <string>Equus</string>
+            <string>Genesis</string>
+            <string>Genesis Coupe</string>
+            <string>Santa Fe</string>
+            <string>Sanata Fe Sport</string>
+            <string>Sonata</string>
+            <string>Sonata Hybrid</string>
+        </array>
+        <key>Infiniti</key>
+        <array>
+            <string>Q40</string>
+            <string>Q50</string>
+            <string>Q60</string>
+            <string>Q70</string>
+            <string>QX50</string>
+            <string>QX60</string>
+            <string>QX70</string>
+            <string>QX80</string>
+        </array>
+        <key>Jaguar</key>
+        <array>
+            <string>F-TYPE</string>
+            <string>XF</string>
+            <string>XJ Series</string>
+            <string>XK Series</string>
+        </array>
+        <key>Jeep</key>
+        <array>
+            <string>Cherokee</string>
+            <string>Compass</string>
+            <string>Grand Cherokee</string>
+            <string>Patriot</string>
+            <string>Renegade</string>
+            <string>Wrangler</string>
+        </array>
+        <key>Kia</key>
+        <array>
+            <string>Cadenza</string>
+            <string>Forte</string>
+            <string>Forte Koup</string>
+            <string>Forte 5</string>
+            <string>Optima</string>
+            <string>Optima Hybrid</string>
+            <string>Rio</string>
+            <string>Sedona</string>
+            <string>Sorento</string>
+            <string>Soul</string>
+            <string>Soul EV</string>
+            <string>Sportage</string>
+        </array>
+        <key>Lamborghini</key>
+        <array>
+            <string>Aventador</string>
+            <string>Gallardo</string>
+            <string>Huracan</string>
+        </array>
+        <key>Land Rover</key>
+        <array>
+            <string>Discovery Sport</string>
+            <string>LR2</string>
+            <string>LR4</string>
+            <string>Range Rover</string>
+            <string>Range Rover Evoque</string>
+            <string>Range Rover Sport</string>
+        </array>
+        <key>Lexus</key>
+        <array>
+            <string>CT</string>
+            <string>ES</string>
+            <string>GS</string>
+            <string>GX</string>
+            <string>IS</string>
+            <string>LS</string>
+            <string>LX</string>
+            <string>NX</string>
+            <string>RC</string>
+            <string>RX</string>
+        </array>
+        <key>Lincoln</key>
+        <array>
+            <string>MKC</string>
+            <string>MKS</string>
+            <string>MKT</string>
+            <string>MKX</string>
+            <string>MKZ</string>
+            <string>Navigator</string>
+            <string>Navigator L</string>
+        </array>
+        <key>Lotus</key>
+        <array>
+            <string>Evora</string>
+        </array>
+        <key>Maserati</key>
+        <array>
+            <string>Ghibli</string>
+            <string>GranTurismo</string>
+            <string>Quattroporte</string>
+        </array>
+        <key>Mazda</key>
+        <array>
+            <string>CX-3</string>
+            <string>CX-5</string>
+            <string>CX-9</string>
+            <string>Mazda2</string>
+            <string>Mazda3</string>
+            <string>Mazda5</string>
+            <string>Mazda6</string>
+            <string>MX-5 Miata</string>
+        </array>
+        <key>McLaren</key>
+        <array>
+            <string>650S</string>
+            <string>MP4-12C</string>
+            <string>P1</string>
+        </array>
+        <key>Mercedes-Benz</key>
+        <array>
+            <string>B-Class</string>
+            <string>C-Class</string>
+            <string>CLA-Class</string>
+            <string>CL-Class</string>
+            <string>CLS-Class</string>
+            <string>E-Class</string>
+            <string>G-Class</string>
+            <string>GLA-Class</string>
+            <string>GL-Class</string>
+            <string>GLK-Class</string>
+            <string>M-Class</string>
+            <string>Mercedes-AMG GT</string>
+            <string>Mercedes-Maybach S600</string>
+            <string>S-Class</string>
+            <string>SL-Class</string>
+            <string>SLK-Class</string>
+            <string>SLS-Class</string>
+            <string>Sprinter 2500 Cargo</string>
+            <string>Sprinter 2500 Crew</string>
+            <string>Sprinter 2500 Passenger</string>
+            <string>Sprinter 3500 Cargo</string>
+        </array>
+        <key>MINI</key>
+        <array>
+            <string>Clubman</string>
+            <string>Convertible</string>
+            <string>Countryman</string>
+            <string>Coupe</string>
+            <string>Hardtop</string>
+            <string>Hardtop 2 Door</string>
+            <string>Hardtop 4 Door</string>
+            <string>Paceman</string>
+            <string>Roadster</string>
+        </array>
+        <key>Mitsubishi</key>
+        <array>
+            <string>i-MiEV</string>
+            <string>Lancer</string>
+            <string>Lancer Evolution</string>
+            <string>Mirage</string>
+            <string>Outlander</string>
+            <string>Outlander Sport</string>
+        </array>
+        <key>Nissan</key>
+        <array>
+            <string>370Z</string>
+            <string>Altima</string>
+            <string>Armada</string>
+            <string>cube</string>
+            <string>Frontier Crew Cab</string>
+            <string>Frontier King Cab</string>
+            <string>GT-R</string>
+            <string>JUKE</string>
+            <string>LEAF</string>
+            <string>Maxima</string>
+            <string>Murano</string>
+            <string>NV1500 Cargo</string>
+            <string>NV200</string>
+            <string>NV2500 HD Cargo</string>
+            <string>NV3500 HD Cargo</string>
+            <string>Pathfinder</string>
+            <string>Quest</string>
+            <string>Rogue</string>
+            <string>Rogue Select</string>
+            <string>Sentra</string>
+            <string>Titan Crew Cab</string>
+            <string>Titan King Cab</string>
+            <string>Versa</string>
+            <string>Xterra</string>
+        </array>
+        <key>Porsche</key>
+        <array>
+            <string>911</string>
+            <string>918 Spyder</string>
+            <string>Boxster</string>
+            <string>Cayenne</string>
+            <string>Cayman</string>
+            <string>Macan</string>
+            <string>Panamera</string>
+        </array>
+        <key>Ram</key>
+        <array>
+            <string>1500 Crew Cab</string>
+            <string>1500 Quad Cab</string>
+            <string>1500 Regular Cab</string>
+            <string>2500 Crew Cab</string>
+            <string>2500 Mega Cab</string>
+            <string>2500 Regular Cab</string>
+            <string>3500 Crew Cab</string>
+            <string>3500 Mega Cab</string>
+            <string>3500 Regular Cab</string>
+            <string>C/V Tradesman</string>
+            <string>ProMaster 1500 Cargo</string>
+            <string>ProMaster 2500 Cargo</string>
+            <string>ProMaster 3500 Cargo</string>
+            <string>ProMaster Cargo Van</string>
+            <string>ProMaster City</string>
+            <string>ProMaster Window Van</string>
+        </array>
+        <key>Rolls-Royce</key>
+        <array>
+            <string>Ghost</string>
+            <string>Phantom</string>
+            <string>Wraith</string>
+        </array>
+        <key>Scion</key>
+        <array>
+            <string>FR-S</string>
+            <string>iA</string>
+            <string>iM</string>
+            <string>iQ</string>
+            <string>tC</string>
+            <string>xB</string>
+            <string>xD</string>
+        </array>
+        <key>smart</key>
+        <array>
+            <string>fortwo</string>
+            <string>fortwo electric drive</string>
+        </array>
+        <key>SRT</key>
+        <array>
+            <string>Viper</string>
+        </array>
+        <key>Subaru</key>
+        <array>
+            <string>BRZ</string>
+            <string>Forester</string>
+            <string>Impreza</string>
+            <string>Legacy</string>
+            <string>Outback</string>
+            <string>Tribeca</string>
+            <string>WRX</string>
+            <string>XV Crosstrek</string>
+        </array>
+        <key>Tesla</key>
+        <array>
+            <string>Model S</string>
+        </array>
+        <key>Toyota</key>
+        <array>
+            <string>4Runner</string>
+            <string>Avalon</string>
+            <string>Camry</string>
+            <string>Corolla</string>
+            <string>FJ Cruiser</string>
+            <string>Highlander</string>
+            <string>Landcruiser</string>
+            <string>Mirai</string>
+            <string>Prius</string>
+            <string>Prius c</string>
+            <string>Prius Plug-in Hybrid</string>
+            <string>Prius v</string>
+            <string>RAV4</string>
+            <string>Sequoia</string>
+            <string>Sienna</string>
+            <string>Tacoma Access Cab</string>
+            <string>Tacoma Double Cab</string>
+            <string>Tacoma Regular Cab</string>
+            <string>Tundra CrewMax</string>
+            <string>Tundra Double Cab</string>
+            <string>Tundra Regular bav</string>
+            <string>Venza</string>
+            <string>Yaris</string>
+        </array>
+        <key>Volkswagen</key>
+        <array>
+            <string>Beetle</string>
+            <string>CC</string>
+            <string>e-Golf</string>
+            <string>Eos</string>
+            <string>Golf</string>
+            <string>Golf GTI</string>
+            <string>Golf R</string>
+            <string>Golf SportWagen</string>
+            <string>GTI</string>
+            <string>Jetta</string>
+            <string>Jetta SportWagen</string>
+            <string>Passat</string>
+            <string>Tiguan</string>
+            <string>Touareg</string>
+        </array>
+        <key>Volvo</key>
+        <array>
+            <string>S60</string>
+            <string>S80</string>
+            <string>V60</string>
+            <string>XC60</string>
+            <string>XC70</string>
+            <string>XC90</string>
+        </array>
+    </dict>
+</plist>

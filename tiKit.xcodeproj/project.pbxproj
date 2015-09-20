@@ -6,15 +6,44 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		906BF4771B6CC969002131D2 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 906BF4781B6CC969002131D2 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				906BF47B1B6CC984002131D2 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		904389061B7EB35000E956E0 /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904389041B7EB35000E956E0 /* DatePickerCell.swift */; };
+		904389071B7EB35000E956E0 /* PickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904389051B7EB35000E956E0 /* PickerViewCell.swift */; };
 		906BF4531B6CBED7002131D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BF4521B6CBED7002131D2 /* AppDelegate.swift */; };
-		906BF4561B6CBED7002131D2 /* tiKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 906BF4541B6CBED7002131D2 /* tiKit.xcdatamodeld */; };
 		906BF4581B6CBED7002131D2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BF4571B6CBED7002131D2 /* MasterViewController.swift */; };
 		906BF45A1B6CBED7002131D2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BF4591B6CBED7002131D2 /* DetailViewController.swift */; };
 		906BF45D1B6CBED7002131D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906BF45B1B6CBED7002131D2 /* Main.storyboard */; };
 		906BF45F1B6CBED7002131D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 906BF45E1B6CBED7002131D2 /* Images.xcassets */; };
 		906BF4621B6CBED7002131D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 906BF4601B6CBED7002131D2 /* LaunchScreen.xib */; };
 		906BF46E1B6CBED7002131D2 /* tiKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BF46D1B6CBED7002131D2 /* tiKitTests.swift */; };
+		906BF4831B6CCA37002131D2 /* _Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BF47D1B6CCA37002131D2 /* _Event.swift */; };
+		906BF4861B6CCA37002131D2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BF4801B6CCA37002131D2 /* Event.swift */; };
+		90AC4BD11B6FC864005A43A1 /* Manufacturer.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90AC4BD01B6FC864005A43A1 /* Manufacturer.plist */; };
+		90AC4BD31B6FD9E2005A43A1 /* ListReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AC4BD21B6FD9E2005A43A1 /* ListReader.swift */; };
+		90AC4BD51B700FE6005A43A1 /* State.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90AC4BD41B700FE6005A43A1 /* State.plist */; };
+		90AC4BD71B702DFF005A43A1 /* PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AC4BD61B702DFF005A43A1 /* PickerController.swift */; };
+		90AC4BDA1B704F3D005A43A1 /* tiKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90AC4BD81B704F3D005A43A1 /* tiKit.xcdatamodeld */; };
+		90AC4BDE1B742CBE005A43A1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AC4BDD1B742CBE005A43A1 /* LocationManager.swift */; };
+		90BCFD7B1B79CCBF0020815D /* Infraction.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90BCFD7A1B79CCBF0020815D /* Infraction.plist */; };
+		90BCFD7D1B79DEC80020815D /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BCFD7C1B79DEC80020815D /* ListTableViewController.swift */; };
+		90BCFD831B7AE2420020815D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BCFD821B7AE2420020815D /* Media.xcassets */; };
+		90BCFD851B7AE9B10020815D /* Layout.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90BCFD841B7AE9B10020815D /* Layout.plist */; };
+		90D63D8D1B7449230003F718 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D63D8C1B7449230003F718 /* CoreLocation.framework */; };
+		90D63D8F1B76BF8B0003F718 /* ViolationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D63D8E1B76BF8B0003F718 /* ViolationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +57,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		904389041B7EB35000E956E0 /* DatePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
+		904389051B7EB35000E956E0 /* PickerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewCell.swift; sourceTree = "<group>"; };
 		906BF44D1B6CBED7002131D2 /* tiKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tiKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		906BF4511B6CBED7002131D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		906BF4521B6CBED7002131D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		906BF4551B6CBED7002131D2 /* tiKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tiKit.xcdatamodel; sourceTree = "<group>"; };
 		906BF4571B6CBED7002131D2 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		906BF4591B6CBED7002131D2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		906BF45C1B6CBED7002131D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +70,20 @@
 		906BF4671B6CBED7002131D2 /* tiKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tiKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		906BF46C1B6CBED7002131D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		906BF46D1B6CBED7002131D2 /* tiKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tiKitTests.swift; sourceTree = "<group>"; };
+		906BF47D1B6CCA37002131D2 /* _Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _Event.swift; path = Model/_Event.swift; sourceTree = "<group>"; };
+		906BF4801B6CCA37002131D2 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Model/Event.swift; sourceTree = "<group>"; };
+		90AC4BD01B6FC864005A43A1 /* Manufacturer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Manufacturer.plist; sourceTree = "<group>"; };
+		90AC4BD21B6FD9E2005A43A1 /* ListReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReader.swift; sourceTree = "<group>"; };
+		90AC4BD41B700FE6005A43A1 /* State.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = State.plist; sourceTree = "<group>"; };
+		90AC4BD61B702DFF005A43A1 /* PickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerController.swift; sourceTree = "<group>"; };
+		90AC4BD91B704F3D005A43A1 /* tiKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tiKit.xcdatamodel; sourceTree = "<group>"; };
+		90AC4BDD1B742CBE005A43A1 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		90BCFD7A1B79CCBF0020815D /* Infraction.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Infraction.plist; sourceTree = "<group>"; };
+		90BCFD7C1B79DEC80020815D /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		90BCFD821B7AE2420020815D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		90BCFD841B7AE9B10020815D /* Layout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Layout.plist; sourceTree = "<group>"; };
+		90D63D8C1B7449230003F718 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		90D63D8E1B76BF8B0003F718 /* ViolationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViolationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D63D8D1B7449230003F718 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +108,7 @@
 		906BF4441B6CBED7002131D2 = {
 			isa = PBXGroup;
 			children = (
+				90D63D8C1B7449230003F718 /* CoreLocation.framework */,
 				906BF44F1B6CBED7002131D2 /* tiKit */,
 				906BF46A1B6CBED7002131D2 /* tiKitTests */,
 				906BF44E1B6CBED7002131D2 /* Products */,
@@ -81,13 +127,19 @@
 		906BF44F1B6CBED7002131D2 /* tiKit */ = {
 			isa = PBXGroup;
 			children = (
+				90AC4BCF1B6FC802005A43A1 /* Lookup Tables */,
+				906BF47C1B6CCA06002131D2 /* Entities */,
 				906BF4521B6CBED7002131D2 /* AppDelegate.swift */,
 				906BF4571B6CBED7002131D2 /* MasterViewController.swift */,
 				906BF4591B6CBED7002131D2 /* DetailViewController.swift */,
+				90AC4BD21B6FD9E2005A43A1 /* ListReader.swift */,
 				906BF45B1B6CBED7002131D2 /* Main.storyboard */,
-				906BF45E1B6CBED7002131D2 /* Images.xcassets */,
-				906BF4601B6CBED7002131D2 /* LaunchScreen.xib */,
-				906BF4541B6CBED7002131D2 /* tiKit.xcdatamodeld */,
+				90BCFD7C1B79DEC80020815D /* ListTableViewController.swift */,
+				90D63D8E1B76BF8B0003F718 /* ViolationTableViewController.swift */,
+				904389041B7EB35000E956E0 /* DatePickerCell.swift */,
+				904389051B7EB35000E956E0 /* PickerViewCell.swift */,
+				90AC4BD61B702DFF005A43A1 /* PickerController.swift */,
+				90AC4BDD1B742CBE005A43A1 /* LocationManager.swift */,
 				906BF4501B6CBED7002131D2 /* Supporting Files */,
 			);
 			path = tiKit;
@@ -96,6 +148,10 @@
 		906BF4501B6CBED7002131D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				90AC4BD81B704F3D005A43A1 /* tiKit.xcdatamodeld */,
+				90BCFD821B7AE2420020815D /* Media.xcassets */,
+				906BF45E1B6CBED7002131D2 /* Images.xcassets */,
+				906BF4601B6CBED7002131D2 /* LaunchScreen.xib */,
 				906BF4511B6CBED7002131D2 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -118,6 +174,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		906BF47C1B6CCA06002131D2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				906BF47D1B6CCA37002131D2 /* _Event.swift */,
+				906BF4801B6CCA37002131D2 /* Event.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		90AC4BCF1B6FC802005A43A1 /* Lookup Tables */ = {
+			isa = PBXGroup;
+			children = (
+				90AC4BD01B6FC864005A43A1 /* Manufacturer.plist */,
+				90AC4BD41B700FE6005A43A1 /* State.plist */,
+				90BCFD7A1B79CCBF0020815D /* Infraction.plist */,
+				90BCFD841B7AE9B10020815D /* Layout.plist */,
+			);
+			name = "Lookup Tables";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +204,7 @@
 				906BF4491B6CBED7002131D2 /* Sources */,
 				906BF44A1B6CBED7002131D2 /* Frameworks */,
 				906BF44B1B6CBED7002131D2 /* Resources */,
+				90BCFDC01B7C96CE0020815D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -162,7 +239,9 @@
 		906BF4451B6CBED7002131D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "raBit Software";
 				TargetAttributes = {
 					906BF44C1B6CBED7002131D2 = {
@@ -171,6 +250,9 @@
 					906BF4661B6CBED7002131D2 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 906BF44C1B6CBED7002131D2;
+					};
+					906BF4771B6CC969002131D2 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -189,6 +271,7 @@
 			targets = (
 				906BF44C1B6CBED7002131D2 /* tiKit */,
 				906BF4661B6CBED7002131D2 /* tiKitTests */,
+				906BF4771B6CC969002131D2 /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -198,8 +281,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90AC4BD11B6FC864005A43A1 /* Manufacturer.plist in Resources */,
+				90BCFD7B1B79CCBF0020815D /* Infraction.plist in Resources */,
+				90BCFD831B7AE2420020815D /* Media.xcassets in Resources */,
 				906BF45D1B6CBED7002131D2 /* Main.storyboard in Resources */,
+				90BCFD851B7AE9B10020815D /* Layout.plist in Resources */,
 				906BF4621B6CBED7002131D2 /* LaunchScreen.xib in Resources */,
+				90AC4BD51B700FE6005A43A1 /* State.plist in Resources */,
 				906BF45F1B6CBED7002131D2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,15 +301,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		906BF47B1B6CC984002131D2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator -m tiKit/tiKit.xcdatamodeld/tiKit.xcdatamodel -O tiKit/Model --swift --template-var arc=true";
+		};
+		90BCFDC01B7C96CE0020815D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		906BF4491B6CBED7002131D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90AC4BD71B702DFF005A43A1 /* PickerController.swift in Sources */,
+				906BF4861B6CCA37002131D2 /* Event.swift in Sources */,
 				906BF4531B6CBED7002131D2 /* AppDelegate.swift in Sources */,
-				906BF4561B6CBED7002131D2 /* tiKit.xcdatamodeld in Sources */,
 				906BF4581B6CBED7002131D2 /* MasterViewController.swift in Sources */,
+				90AC4BD31B6FD9E2005A43A1 /* ListReader.swift in Sources */,
+				90BCFD7D1B79DEC80020815D /* ListTableViewController.swift in Sources */,
 				906BF45A1B6CBED7002131D2 /* DetailViewController.swift in Sources */,
+				906BF4831B6CCA37002131D2 /* _Event.swift in Sources */,
+				90AC4BDA1B704F3D005A43A1 /* tiKit.xcdatamodeld in Sources */,
+				90AC4BDE1B742CBE005A43A1 /* LocationManager.swift in Sources */,
+				90D63D8F1B76BF8B0003F718 /* ViolationTableViewController.swift in Sources */,
+				904389071B7EB35000E956E0 /* PickerViewCell.swift in Sources */,
+				904389061B7EB35000E956E0 /* DatePickerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +410,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -352,6 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tiKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raBit-Software.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -362,6 +490,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tiKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raBit-Software.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -370,16 +499,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = tiKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raBit-Software.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tiKit.app/tiKit";
 			};
@@ -389,14 +515,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = tiKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raBit-Software.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tiKit.app/tiKit";
+			};
+			name = Release;
+		};
+		906BF4791B6CC969002131D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		906BF47A1B6CC969002131D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -419,6 +556,7 @@
 				906BF4731B6CBED7002131D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		906BF4741B6CBED7002131D2 /* Build configuration list for PBXNativeTarget "tiKitTests" */ = {
 			isa = XCConfigurationList;
@@ -427,16 +565,26 @@
 				906BF4761B6CBED7002131D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		906BF4781B6CC969002131D2 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				906BF4791B6CC969002131D2 /* Debug */,
+				906BF47A1B6CC969002131D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		906BF4541B6CBED7002131D2 /* tiKit.xcdatamodeld */ = {
+		90AC4BD81B704F3D005A43A1 /* tiKit.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				906BF4551B6CBED7002131D2 /* tiKit.xcdatamodel */,
+				90AC4BD91B704F3D005A43A1 /* tiKit.xcdatamodel */,
 			);
-			currentVersion = 906BF4551B6CBED7002131D2 /* tiKit.xcdatamodel */;
+			currentVersion = 90AC4BD91B704F3D005A43A1 /* tiKit.xcdatamodel */;
 			path = tiKit.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

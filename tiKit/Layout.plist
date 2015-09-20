@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Other</key>
+	<dict/>
+	<key>Basketball hoops and skateboard ramps</key>
+	<dict/>
+	<key>Window coverings and treatments</key>
+	<dict/>
+	<key>Signs</key>
+	<dict/>
+	<key>Commercial Vehicles &amp; equipment</key>
+	<dict/>
+	<key>Boats, trailers, and other recreational vehicles and equipment</key>
+	<dict/>
+	<key>Animals</key>
+	<dict/>
+	<key>Unapproved exterior changes</key>
+	<dict/>
+	<key>Yard Maintenance Needed</key>
+	<dict/>
+	<key>Vehicles</key>
+	<dict>
+		<key>Infraction</key>
+		<dict>
+			<key>type</key>
+			<string>UIPickerView</string>
+			<key>listName</key>
+			<string>Infraction</string>
+			<key>fieldName</key>
+			<string>Infraction</string>
+			<key>headerText</key>
+			<string>Incident</string>
+		</dict>
+		<key>Occured On</key>
+		<dict>
+			<key>type</key>
+			<string>UIDatePicker</string>
+			<key>fieldName</key>
+			<string>OccuredOn</string>
+		</dict>
+		<key>Manufacturer</key>
+		<dict>
+			<key>type</key>
+			<string>UIPickerView</string>
+			<key>listName</key>
+			<string>Manufacturer</string>
+			<key>fieldName</key>
+			<string>VehicleManufacturer</string>
+			<key>headerText</key>
+			<string>Vehicle Information</string>
+		</dict>
+		<key>Model</key>
+		<dict>
+			<key>type</key>
+			<string>UIPickerView</string>
+			<key>listName</key>
+			<string>Manufacturer</string>
+			<key>Index</key>
+			<string>value</string>
+			<key>fieldName</key>
+			<string>VehicleModel</string>
+		</dict>
+		<key>VIN Number</key>
+		<dict>
+			<key>type</key>
+			<string>UITextField</string>
+			<key>fieldName</key>
+			<string>VehicleIdentificationNumber</string>
+		</dict>
+		<key>Plate Number</key>
+		<dict>
+			<key>type</key>
+			<string>UITextField</string>
+			<key>fieldName</key>
+			<string>VehiclePlate</string>
+		</dict>
+		<key>State</key>
+		<dict>
+			<key>type</key>
+			<string>UIPickerView</string>
+			<key>listName</key>
+			<string>State</string>
+			<key>fieldName</key>
+			<string>State</string>
+		</dict>
+		<key>Location</key>
+		<dict>
+			<key>type</key>
+			<string>MAP</string>
+			<key>headerText</key>
+			<string>Additional Detail</string>
+		</dict>
+		<key>Evidence</key>
+		<dict>
+			<key>type</key>
+			<string>EVIDENCE</string>
+		</dict>
+	</dict>
+	<key>Trash receptacles in view</key>
+	<dict>
+		<key>Infraction</key>
+		<dict>
+			<key>type</key>
+			<string>UILabel</string>
+			<key>list-name</key>
+			<string>Infraction</string>
+		</dict>
+		<key>Occured On</key>
+		<dict>
+			<key>type</key>
+			<string>UIDatePicker</string>
+		</dict>
+		<key>Bin number</key>
+		<dict>
+			<key>type</key>
+			<string>input</string>
+		</dict>
+		<key>Location</key>
+		<dict>
+			<key>type</key>
+			<string>MAP</string>
+		</dict>
+		<key>Evidence</key>
+		<dict>
+			<key>type</key>
+			<string>EVIDENCE</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

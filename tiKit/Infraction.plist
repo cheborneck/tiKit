@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Yard Maintenance Needed</key>
+    <array>
+        <string>Yards must be maintained on a basis frequent enough to maintain an overall well-kept appearance. This includes:</string>
+        <string>Mowing: Front yard and side yard of corner lots.</string>
+        <string>Edging: Sidewalk, driveway and curb; no runners should be showing on paved surfaces.</string>
+        <string>Weed control: Flowerbeds, non-lawn areas, and cracks of sidewalks, and driveways.</string>
+        <string>Vegetation requirements: The majority of the front yard will consist of grass or short, maintained vegetation or groundcover. No hard, packed earth or barren spots. Gravel and loose stones cannot be used in lieu of vegetation except in curb areas.</string>
+        <string>Yard debris, including lawn clippings and tree &amp; shrub trimmings, must be removed from view after maintenance until trash pick-up day. Blowing, raking or sweeping lawn clippings and leaves into the street is not acceptable.</string>
+        <string>Pruning: Trees must be pruned 8' above the sidewalks and streets. Shrubs may not extend over paved areas. All shrubs on the Lot must be neat and pruned.</string>
+        <string>Removing dead plants, shrubs, trees in a timely manner.</string>
+        <string>Watering regularly without violating HOA or city conservation directives.</string>
+        <string>Keeping Lot areas visible from the street picked up and clear of miscellaneous items which are not meant to be permanently placed in yard.</string>
+    </array>
+    <key>Trash receptacles in view</key>
+    <array>
+        <string>All trash containers must be hidden from general view except on trash pick-up day. If containers can be seen from the street, they are not out of view.</string>
+    </array>
+    <key>Unapproved exterior changes</key>
+    <array>
+        <string>All changes to the exterior of the residence, the addition of any structure, fence replacement or installation, painting, roof replacement, and major landscape modifications and installations must be pre-approved in writing by the ACC. (Refer to CCR’S, Article VII, Section 5)</string>
+    </array>
+    <key>Animals</key>
+    <array>
+        <string>All pets must be leashed and under control of the person holding the leash. Dogs, cats or any other animals may not be allowed to cause a nuisance. Pets may not foul another owner’s property. If an accident occurs, the pet’s owner must immediately remove the feces from the property. This also applies to the Association’s common areas.</string>
+    </array>
+    <key>Boats, trailers, and other recreational vehicles and equipment</key>
+    <array>
+        <string>May not be parked or stored on any Lot or within the neighborhood without prior authorization. Special considerations will be given, but limited to forty-eight hours, in the case of preparation and unloading of recreational vehicles and trailers. Removal of the recreational vehicle or trailer for short periods of times, so as to avoid the intent of this provision, shall NOT affect the running of the time periods set out herein.</string>
+        <string>Definitions – includes, but not limited to, recreational equipment (boats, jet skis, campers, RV’s, off-road vehicles, etc.), and trailers (hauling, storage, utility).</string>
+    </array>
+    <key>Vehicles</key>
+    <array>
+        <string>Vehicles that are regularly parked in view may not be parked on the grass or on sidewalks at any time. No vehicles without a current license plate, derelict (inoperable), junk, or racing vehicles shall be located on any Lot temporarily or permanently. Williamson County authorities will be contacted to enforce procedures to remove abandoned and/or inoperable vehicles from the street and right-of-ways.</string>
+        <string>Definitions of inoperable vehicles includes, but not limited to, expired registration, expired inspection, without a current license plate, elevated for some period of time and vehicles in need of required parts or maintenance (i.e. missing components, flat or missing tires, etc.).</string>
+    </array>
+    <key>Commercial Vehicles &amp; equipment</key>
+    <array>
+        <string>Only 1 company-provided, passenger (i.e. marked van, car, pick-up) vehicle per household shall be parked in the neighborhood (overnight or temporarily).</string>
+        <string>Commercial vehicles (larger than passenger), work trailers, and equipment shall NOT be parked in the neighborhood (overnight or temporarily).</string>
+    </array>
+    <key>Signs</key>
+    <array>
+        <string>Only one (1) sign for the sale or lease of a home are permissible and must be on a staked device in the front lawn.</string>
+        <string>Fence signage is limited to “Beware of Dog” signs and law required notices.</string>
+    </array>
+    <key>Window coverings and treatments</key>
+    <array>
+        <string>All windows that can be viewed from the street must have fitted window coverings and must be in good condition (no bent/broken slats, no tattered/torn edges). Covering windows with foil, reflective film, blankets, sheets, or paper is not permitted.</string>
+    </array>
+    <key>Basketball hoops and skateboard ramps</key>
+    <array>
+        <string>Portable or street hoops and skateboard ramps need to be moved near the house or garage when not in use. At no time are portable or street hoops or skateboard ramps to be used or stored in the street.</string>
+    </array>
+    <key>Other</key>
+    <array>
+        <string>Examples of additional things that could incur violations are:</string>
+        <string>Window air conditioning units (CCR Article VI, Section 4).</string>
+        <string>Deferred maintenance of the property including painted surfaces.</string>
+        <string>Non-complying basketball goals.</string>
+        <string>Miscellaneous unsightly items stored in view. Miscellany in Yard – Any items in yard which are not meant to be permanently placed in yard such as household furniture, toys or yard tools.</string>
+        <string>Torn window screens.</string>
+    </array>
+</dict>
+</plist>

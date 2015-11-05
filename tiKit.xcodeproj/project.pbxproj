@@ -42,6 +42,11 @@
 		90BCFD7D1B79DEC80020815D /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BCFD7C1B79DEC80020815D /* ListTableViewController.swift */; };
 		90BCFD831B7AE2420020815D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90BCFD821B7AE2420020815D /* Media.xcassets */; };
 		90BCFD851B7AE9B10020815D /* Layout.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90BCFD841B7AE9B10020815D /* Layout.plist */; };
+		90D5DC811BB01D5600DB2C27 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D5DC801BB01D5600DB2C27 /* ColorPicker.swift */; settings = {ASSET_TAGS = (); }; };
+		90D5DC831BB01D5E00DB2C27 /* ToolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D5DC821BB01D5E00DB2C27 /* ToolKit.swift */; settings = {ASSET_TAGS = (); }; };
+		90D5DC851BB01D6A00DB2C27 /* ColorSpinnerItemRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D5DC841BB01D6A00DB2C27 /* ColorSpinnerItemRenderer.swift */; settings = {ASSET_TAGS = (); }; };
+		90D5DC871BB01DAB00DB2C27 /* CustomColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90D5DC861BB01DAB00DB2C27 /* CustomColors.plist */; settings = {ASSET_TAGS = (); }; };
+		90D5DC891BB18AF200DB2C27 /* ColorPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D5DC881BB18AF200DB2C27 /* ColorPickerCell.swift */; settings = {ASSET_TAGS = (); }; };
 		90D63D8D1B7449230003F718 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D63D8C1B7449230003F718 /* CoreLocation.framework */; };
 		90D63D8F1B76BF8B0003F718 /* ViolationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D63D8E1B76BF8B0003F718 /* ViolationTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -82,6 +87,11 @@
 		90BCFD7C1B79DEC80020815D /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		90BCFD821B7AE2420020815D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		90BCFD841B7AE9B10020815D /* Layout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Layout.plist; sourceTree = "<group>"; };
+		90D5DC801BB01D5600DB2C27 /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		90D5DC821BB01D5E00DB2C27 /* ToolKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolKit.swift; sourceTree = "<group>"; };
+		90D5DC841BB01D6A00DB2C27 /* ColorSpinnerItemRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSpinnerItemRenderer.swift; sourceTree = "<group>"; };
+		90D5DC861BB01DAB00DB2C27 /* CustomColors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CustomColors.plist; sourceTree = "<group>"; };
+		90D5DC881BB18AF200DB2C27 /* ColorPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerCell.swift; sourceTree = "<group>"; };
 		90D63D8C1B7449230003F718 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		90D63D8E1B76BF8B0003F718 /* ViolationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViolationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,16 +140,20 @@
 				90AC4BCF1B6FC802005A43A1 /* Lookup Tables */,
 				906BF47C1B6CCA06002131D2 /* Entities */,
 				906BF4521B6CBED7002131D2 /* AppDelegate.swift */,
+				90D5DC821BB01D5E00DB2C27 /* ToolKit.swift */,
+				90D5DC801BB01D5600DB2C27 /* ColorPicker.swift */,
+				90D5DC841BB01D6A00DB2C27 /* ColorSpinnerItemRenderer.swift */,
 				906BF4571B6CBED7002131D2 /* MasterViewController.swift */,
 				906BF4591B6CBED7002131D2 /* DetailViewController.swift */,
 				90AC4BD21B6FD9E2005A43A1 /* ListReader.swift */,
-				906BF45B1B6CBED7002131D2 /* Main.storyboard */,
 				90BCFD7C1B79DEC80020815D /* ListTableViewController.swift */,
 				90D63D8E1B76BF8B0003F718 /* ViolationTableViewController.swift */,
 				904389041B7EB35000E956E0 /* DatePickerCell.swift */,
+				90D5DC881BB18AF200DB2C27 /* ColorPickerCell.swift */,
 				904389051B7EB35000E956E0 /* PickerViewCell.swift */,
 				90AC4BD61B702DFF005A43A1 /* PickerController.swift */,
 				90AC4BDD1B742CBE005A43A1 /* LocationManager.swift */,
+				906BF45B1B6CBED7002131D2 /* Main.storyboard */,
 				906BF4501B6CBED7002131D2 /* Supporting Files */,
 			);
 			path = tiKit;
@@ -186,6 +200,7 @@
 		90AC4BCF1B6FC802005A43A1 /* Lookup Tables */ = {
 			isa = PBXGroup;
 			children = (
+				90D5DC861BB01DAB00DB2C27 /* CustomColors.plist */,
 				90AC4BD01B6FC864005A43A1 /* Manufacturer.plist */,
 				90AC4BD41B700FE6005A43A1 /* State.plist */,
 				90BCFD7A1B79CCBF0020815D /* Infraction.plist */,
@@ -246,6 +261,7 @@
 				TargetAttributes = {
 					906BF44C1B6CBED7002131D2 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = H3KN9H3ZWN;
 					};
 					906BF4661B6CBED7002131D2 = {
 						CreatedOnToolsVersion = 6.4;
@@ -281,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D5DC871BB01DAB00DB2C27 /* CustomColors.plist in Resources */,
 				90AC4BD11B6FC864005A43A1 /* Manufacturer.plist in Resources */,
 				90BCFD7B1B79CCBF0020815D /* Infraction.plist in Resources */,
 				90BCFD831B7AE2420020815D /* Media.xcassets in Resources */,
@@ -336,7 +353,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				90AC4BD71B702DFF005A43A1 /* PickerController.swift in Sources */,
+				90D5DC831BB01D5E00DB2C27 /* ToolKit.swift in Sources */,
 				906BF4861B6CCA37002131D2 /* Event.swift in Sources */,
+				90D5DC891BB18AF200DB2C27 /* ColorPickerCell.swift in Sources */,
 				906BF4531B6CBED7002131D2 /* AppDelegate.swift in Sources */,
 				906BF4581B6CBED7002131D2 /* MasterViewController.swift in Sources */,
 				90AC4BD31B6FD9E2005A43A1 /* ListReader.swift in Sources */,
@@ -344,8 +363,10 @@
 				906BF45A1B6CBED7002131D2 /* DetailViewController.swift in Sources */,
 				906BF4831B6CCA37002131D2 /* _Event.swift in Sources */,
 				90AC4BDA1B704F3D005A43A1 /* tiKit.xcdatamodeld in Sources */,
+				90D5DC811BB01D5600DB2C27 /* ColorPicker.swift in Sources */,
 				90AC4BDE1B742CBE005A43A1 /* LocationManager.swift in Sources */,
 				90D63D8F1B76BF8B0003F718 /* ViolationTableViewController.swift in Sources */,
+				90D5DC851BB01D6A00DB2C27 /* ColorSpinnerItemRenderer.swift in Sources */,
 				904389071B7EB35000E956E0 /* PickerViewCell.swift in Sources */,
 				904389061B7EB35000E956E0 /* DatePickerCell.swift in Sources */,
 			);
@@ -477,10 +498,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tiKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raBit-Software.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -488,10 +512,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tiKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.raBit-Software.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

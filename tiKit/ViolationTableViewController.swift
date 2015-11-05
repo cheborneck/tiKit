@@ -18,15 +18,34 @@ class ViolationTableViewController: UITableViewController, UIPickerViewDataSourc
     var selectedIndexPath :NSIndexPath?
     let startYear = 1959
     
+    enum FieldType: Int {
+        case StandardPicker, DatePicker, ColorPicker, PhotoPicker, Normal
+        var toString : String {
+            switch self {
+                // Use Internationalization, as appropriate.
+            case .StandardPicker: return "Standard"
+            case .DatePicker: return "Date"
+            case .ColorPicker: return "Color"
+            case .PhotoPicker: return "Photo"
+            case .Normal: return "Normal"
+            }
+        }
+    }
+    
     // array which holds the data retrieved from the plist
     private var dataArray = [(String, ImplicitlyUnwrappedOptional<AnyObject>)]()
     private var keys = [String]()// keys are usually array of string types
     private var values = [AnyObject?]()// the values could be an array of any type
+    private var keysArray: [String]?
 
     // plist filename (less the extension)
     var listName: String? = nil
 
     var tableViewBaseCellHeight: CGFloat = 0
+    
+    let colorPicker = ColorPicker(frame: CGRectZero)// init object with a zero frame size
+    
+    var colorPickerCell: UITableViewCell?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,21 +58,22 @@ class ViolationTableViewController: UITableViewController, UIPickerViewDataSourc
 
         // setup the tableview layout
         tableLayoutData = [
-            ["title" : "Occurred On", "type" : "datepicker", "value" : NSDate(), "format" : "EEE, MMM d, yyyy H:mm a"],
-            ["title" : "Manufacturer", "type" : "picker", "source" : "Manufacturer", "value" : ""],
-            ["title" : "Model", "type" : "picker", "source" : models, "value" : "", "enabled" : false],
-            ["title" : "Color", "type" : "picker"],
-            ["title" : "Plate", "type" : "normal"],
-            ["title" : "Year", "type" : "picker", "source" : years, "value" : dateFormatter.stringFromDate(NSDate())],
-            ["title" : "State", "type" : "picker", "source" : "State", "value" : ""],
-            ["title" : "Address", "type" : "normal", "value" : "1 Infinite Loop Cupertino, CA 95014"],
-            ["title" : "Telephone", "type" : "normal", "value" : "1(408)-996-1010"]
+            ["title" : "Occurred On", "type" : FieldType.DatePicker.rawValue, "value" : NSDate(), "format" : "EEE, MMM d, yyyy H:mm a"],
+            ["title" : "Manufacturer", "type" : FieldType.StandardPicker.rawValue, "source" : "Manufacturer", "value" : ""],
+            ["title" : "Model", "type" : FieldType.StandardPicker.rawValue, "source" : models, "value" : "", "enabled" : false],
+            ["title" : "Color", "type" : FieldType.ColorPicker.rawValue, "value" : "Gray"],
+            ["title" : "Plate", "type" : FieldType.Normal.rawValue],
+            ["title" : "Year", "type" : FieldType.StandardPicker.rawValue, "source" : years, "value" : dateFormatter.stringFromDate(NSDate())],
+            ["title" : "State", "type" : FieldType.StandardPicker.rawValue, "source" : "State", "value" : ""],
+            ["title" : "Location", "type" : FieldType.Normal.rawValue, "value" : "1 Infinite Loop Cupertino, CA 95014"],
+            ["title" : "Evidence", "type" : FieldType.Normal.rawValue, "value" : "5 photos"],
+            ["title" : "Notes", "type" : FieldType.Normal.rawValue, "value" : "Vehicle was observed parked facing the opposite direction and partially on the grass."]
         ]
         
         // set the default tableView cell height (44 usually)
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "NormalCell")
         tableViewBaseCellHeight = CGRectGetHeight(cell.frame)
-        
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -94,20 +114,24 @@ class ViolationTableViewController: UITableViewController, UIPickerViewDataSourc
         // Configure the cell...
         var rowData = tableLayoutData![dataRow]
         let title = rowData["title"] as! String
-        let type = rowData["type"] as! String
+//        let type = rowData["type"] as! PickerType
+        let type = FieldType(rawValue: rowData["type"] as! Int)
         let enabled = rowData["enabled"] as? Bool
         
         // display the inline picker
         if selectedIndexPath != nil && selectedIndexPath!.section == indexPath.section && selectedIndexPath!.row == indexPath.row - 1 {
             
-            if type == "picker" {
+            if type == FieldType.StandardPicker {
+                
+// MARK: Standard Picker
+                
                 // get a reusable cell that contains a pickerView
                 let pickerViewCell = tableView.dequeueReusableCellWithIdentifier("PickerViewCell", forIndexPath: indexPath) as! PickerViewCell
                 
                 // TODO: load the data array
                 if let source = rowData["source"] as? NSArray {
                     keys = source as NSArray as! [(String)]
-                    print(keys)
+//                    print(keys)// years
 //                    dataArray = source as? [String]
                 } else if let listName = rowData["source"] as? String {
                     // get data from a plist
@@ -136,7 +160,10 @@ class ViolationTableViewController: UITableViewController, UIPickerViewDataSourc
                 }
                 return pickerViewCell
                 
-            } else if type == "datepicker" {
+            } else if type == FieldType.DatePicker {
+                
+// MARK: Date Picker
+                
                 // get a reusable cell containing a datePicker
                 let datePickerCell = tableView.dequeueReusableCellWithIdentifier("DatePickerCell", forIndexPath: indexPath) as! DatePickerCell
                 
@@ -148,6 +175,36 @@ class ViolationTableViewController: UITableViewController, UIPickerViewDataSourc
                     datePickerCell.datePicker.setDate(date as! NSDate, animated: true)
                 }
                 return datePickerCell
+            } else if type == FieldType.ColorPicker {
+                
+// MARK: Color Picker
+                
+                // get a reusable cell containing a datePicker
+                colorPickerCell = tableView.dequeueReusableCellWithIdentifier("ColorPickerCell", forIndexPath: indexPath)
+                
+                colorPicker.frame = CGRect(x: colorPickerCell!.frame.midX-113, y: 0, width: 216, height: 180)
+                
+                colorPickerCell!.addSubview(colorPicker)
+                
+                // set receiver function for spinner changed events
+                colorPicker.addTarget(self, action: "spinnerColorChanged:", forControlEvents: .ValueChanged)
+
+                colorPicker.blendBackGround(true)
+
+                // load custom colors from the property list store
+                loadCustomColors()// (optional)
+                
+                // sort the colors in the spinner (optional)
+                colorPicker.sortColors(ascending: true)
+                
+                if let value: AnyObject = rowData["value"] {
+                    // set the color to the current item
+                    currentColor = (colorPicker.colors.filter {$0.name == value as! String}).first!.color
+                }
+                
+                return colorPickerCell!
+            } else if type == FieldType.PhotoPicker {
+                
             }
         }
         
@@ -160,7 +217,7 @@ class ViolationTableViewController: UITableViewController, UIPickerViewDataSourc
         cell.textLabel?.text = title
         // if there's a value see if it needs formatting
         if let valueOfRow: AnyObject = rowData["value"] {
-            if type == "datepicker" {
+            if type == FieldType.DatePicker {
                 if let type: AnyObject = rowData["format"] {
                     dateFormatter.dateFormat = type as! String
                     cell.detailTextLabel?.text = dateFormatter.stringFromDate(valueOfRow as! NSDate)
@@ -187,7 +244,7 @@ class ViolationTableViewController: UITableViewController, UIPickerViewDataSourc
         if selectedIndexPath != nil
             && selectedIndexPath!.section == indexPath.section
             && selectedIndexPath!.row == indexPath.row - 1 {
-                heightForRow = 216.0
+                heightForRow = 180//216.0
         }
         
         return heightForRow
@@ -204,11 +261,11 @@ class ViolationTableViewController: UITableViewController, UIPickerViewDataSourc
         
         // get the data for the row that was selected
         var rowData = tableLayoutData![dataRow]
-        let type = rowData["type"] as! String
+        let type = FieldType(rawValue: rowData["type"] as! Int)
         
         // display or hide the picker view
-        if type != "normal" {
-            displayOrHideInlinePickerViewForIndexPath(indexPath, type);
+        if type != FieldType.Normal {
+            displayOrHideInlinePickerViewForIndexPath(indexPath, (type?.toString)!);
         }
         
         // animated the cell selection animation
@@ -306,8 +363,6 @@ class ViolationTableViewController: UITableViewController, UIPickerViewDataSourc
         let index = selectedIndexPath!.row
         var rowData = tableLayoutData![index]
         
-        // update the datasource
-        // TODO: fix this code updater
         rowData["value"] = keys[row]
         
         // puts the selected value into the field definition default
@@ -318,6 +373,76 @@ class ViolationTableViewController: UITableViewController, UIPickerViewDataSourc
         
         // refresh the cell display
         tableView.reloadRowsAtIndexPaths([selectedIndexPath!], withRowAnimation: .Fade)
+    }
+    
+    // MARK: - Color picker properties
+    
+    var currentColor : UIColor = UIColor.grayColor()
+        {
+        didSet
+        {
+            colorPicker.removeTarget(self, action: "spinnerColorChanged:", forControlEvents: .ValueChanged)
+            
+            colorPicker.currentColor = currentColor
+            
+            // fill the background with color
+            if colorPickerCell != nil {
+                colorPickerCell!.backgroundColor = currentColor
+            }
+            
+            let index = selectedIndexPath!.row
+            var rowData = tableLayoutData![index]
+            
+            rowData["value"] = colorPicker.currentColorName
+            
+            // puts the selected value into the field definition default
+            if var tmpArray = tableLayoutData {
+                tmpArray[index] = rowData
+                tableLayoutData = tmpArray
+            }
+            
+            colorPicker.addTarget(self, action: "spinnerColorChanged:", forControlEvents: .ValueChanged)
+            
+            // updates the cell display for the changed value
+            tableView.reloadRowsAtIndexPaths([selectedIndexPath!], withRowAnimation: .Fade)
+        }
+    }
+    
+    func spinnerColorChanged(value : ColorPicker)
+    {
+        currentColor = value.currentColor
+        
+    }
+
+    // loads the custom RGN colors from the property list and sorts them
+    func loadCustomColors()
+    {
+        // load custom colors - get the property list data
+        if let propertyListDict = getPropertyListData("CustomColors")
+        {
+            // create another array of color names
+            keysArray = propertyListDict.allKeys as? [String]
+            
+            // add custom colors to default color list
+            for key in keysArray!
+            {
+                // does it already exist by this name? (don't add duplicates)
+                if colorPicker.colors.filter({$0.name == key}).isEmpty
+                {
+                    // collect the data from the dictionary
+                    let colorItem: AnyObject = propertyListDict.objectForKey(key)!
+                    let red = CGFloat((colorItem.objectForKey("R") as! NSString).floatValue)
+                    let green = CGFloat((colorItem.objectForKey("G") as! NSString).floatValue)
+                    let blue = CGFloat((colorItem.objectForKey("B") as! NSString).floatValue)
+                    let customColor = UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
+                    
+                    // create a NamedColor structure
+                    let newColor = NamedColor(name: key, color: customColor)
+                    // add it to the picker
+                    colorPicker.addColor(newColor)
+                }
+            }
+        }
     }
     
 }
